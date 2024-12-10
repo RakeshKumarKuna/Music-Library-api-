@@ -21,9 +21,7 @@ const Favorite = sequelize.define('Favorite', {
     type: DataTypes.UUID,
     allowNull: false, // Assume the user is authenticated
   },
-}, {
-  timestamps: true,
-  freezeTableName: true,
-});
+}, 
+);
 
 module.exports = Favorite;
